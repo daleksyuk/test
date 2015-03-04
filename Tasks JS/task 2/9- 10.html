@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 9-10</title>
+</head>
+<body>
+<p>
+    9 Напишите функцию, которая возвращает последний элемент из произвольного массива.
+    &&
+    10 Напишите функцию, которая добавляет элемент в конец произвольного массива.
+
+</p>
+<script>
+    var good = ['Work ','"EPAM" ', 'is '];//0, 1, 2
+    console.log ( [good.length -1] );
+    // индекс последнего элемента на 1 меньший длиы массива.
+    alert( good.pop() );//Быстро удаляет последний элемент из массива
+    good.push('is');//и возвращает его.
+    good[good.length] = 'awesome!';
+    alert(good);
+</script>
+</body>
+</html>

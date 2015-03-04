@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 2</title>
+</head>
+<body>
+<p>
+    2  Напишите функцию checkSpam(str), которая возвращает true, если строка str содержит ‘viagra’,  ‘XXX’, ‘prn’.
+    Функция должна быть нечувствительна к регистру
+
+</p>
+<script>
+    function checkSpam(str) {
+        var newStr =  str.toLowerCase();
+        if ( (newStr.indexOf('viagra') >= 0) ||
+                (newStr.indexOf('xxx') != -1) ||/*или так  не 0,
+                 означает,что результат indexOf отличен от `-1,
+                 т.е. совпадение есть.*/
+                (newStr.indexOf('prn') != -1) )
+        return true;
+    }
+
+    alert( checkSpam ('buy ViAgRa') );
+    alert( checkSpam ('XXX') );
+    alert( checkSpam ('prn') );
+
+</script>
+
+<p><hr/>Метод indexOf ищет совпадение с учетом регистра.
+    То есть, в строке 'xXx' он не найдет 'XXX'.
+    Для проверки приведем к нижнему регистру и строку str и то, что будем искать:</p>
+<!--document.writeln( [
+      checkSpam('buy ViAgRA now'), // == true
+      checkSpam('free xxXxx'), //== true
+      checkSpam("innocent rabbit") ].join(', ') ); //== false
+
+function checkSpam(str) { return str.search( /viagra|xxx/gi ) > -1 }-->
+</body>
+</html>

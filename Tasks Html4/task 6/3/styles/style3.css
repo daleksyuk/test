@@ -1,0 +1,139 @@
+﻿body {
+margin: 0;
+padding: 0;
+border: 0;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+background-image: url("../images/background_tile.gif");
+background-repeat: repeat-x 100% 100%;
+background-attachment: scroll;
+}
+
+#container {
+width: 760px;
+margin: 0 auto;
+border-right: 2px solid #484848;
+border-bottom: 2px solid #484848;
+border-left: 2px solid #484848;
+background-color: #fff;
+margin-bottom: 30px; /*как на скрине*/
+}
+
+#masthead {
+width: 660px;
+overflow: hidden;
+text-align: center;
+background-color: #fff;
+background-image: url("../images/masthead_image.jpg");
+background-position: top;
+background-repeat: no-repeat;
+}
+
+#masthead h1 {
+color: #050505;
+margin-left: 2em;
+margin-bottom: 0;
+}
+
+#masthead h3 {
+line-height: 1.5;
+color: #959C8D;
+margin-top: 0;
+margin-left: 3em;
+}
+
+#navigation {
+border-top: 1px solid #808080;
+border-bottom: 1px solid #808080;
+background-color: #CCDDCC;
+height: 30px; /*как на скрине*/
+font-size: 14px;
+overflow: hidden;
+}
+
+#navigation ul {
+margin-bottom: 0;
+margin-top: 7px;
+width: 100%;
+padding: 0;
+}
+
+#navigation li {
+float: left;
+display: inline;
+list-style-type: none;
+}
+
+#navigation a {
+font-weight: bold;
+text-decoration: none;
+color: #2A0E00;
+padding: 5px;
+background-color: #CCDDCC;
+}
+
+#navigation a:hover {
+font-weight: bold;
+text-decoration: none;
+color: #fff;
+border: 1px solid #CC7777;
+background-color: #CC7777;
+}
+
+#column_l {
+position: relative;
+float: left;
+width: 470px;
+padding: 0 15px;
+background-color: #fff;
+}
+
+#column_r {
+position: relative;
+float: left;
+width: 217px;
+padding: 15px 10px;
+background-color: #fff;
+}
+
+#column_r img {
+border: 1px solid #808080;
+}
+
+h1 {
+font-size: xx-large;
+color: #CC7777;
+}
+h2 {
+font-size: x-large;
+color: #CC7777;
+}
+h3 {	
+font-size: large;
+color: #6A6767;
+}
+h4 {
+font-size: medium;
+color: #CC7777;
+}
+
+#footer {
+text-align: center;
+padding-bottom: 10px;
+}
+
+#footer p {
+font-size: x-small;
+color: #D67E86;
+}
+
+a {
+color: #D67E86;
+text-decoration: underline;
+}
+
+a:hover {
+color: #D67E86;
+text-decoration: underline;
+}
+

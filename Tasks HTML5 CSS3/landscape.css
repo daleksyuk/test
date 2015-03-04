@@ -1,0 +1,128 @@
+body{
+    background: -moz-linear-gradient(left, #2F2727, #1a82f7);
+}
+
+.fon {
+    border: 10px solid #1facff;
+    width: 700px;
+    height: 400px;
+    background: linear-gradient(#76ffff, white );
+    border-radius: 15px;
+    position: relative;
+}
+
+.sun {
+    width: 80px;
+    height: 80px;
+    background: #fffe15;
+    border: 2px solid #ff9d31;
+    position: absolute;
+    top: 130px;
+    right: 150px;
+    left: 150px;
+    border-radius: 50px / 50px;
+
+}
+
+.left1 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 100px;
+    right: 350px;
+    left: 10px;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 160px solid #6e040f;
+}
+
+.left2 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 100px;
+    right: 350px;
+    left: 150px;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 160px solid #6e040f;
+}
+
+.sea{
+    width: 710px;
+    height: 160px;
+    background: #1facff;
+    position: absolute;
+    top: 260px;
+    right: 10px;
+    left: 10px;
+
+}
+.right1 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 140px;
+    right: 400px;
+    left: 370px;
+
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 160px solid #6e040f;
+}
+.right2 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 140px;
+    right: 400px;
+    left: 510px;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 160px solid #6e040f;
+}
+
+
+.boat {
+    width: 50px;
+    height: 50px;
+    background: #fffbfd;
+    position: absolute;
+    top: 320px;
+    right: 400px;
+    left: 50px;
+    transition:all 1s ease-in-out;
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+
+}
+.boat:hover {
+    transform:translate(550px, 0);
+    -webkit-transform:translate(550px, 0);
+    -moz-transform:translate(550px, 0);
+    -o-transform:translate(550px, 0);
+}
+.boat:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 25px solid #fffbfd;
+    border-left: 40px solid #1facff;
+    border-right: 40px solid #1facff;
+    width: 10px;
+    height:20px;
+}
+.boat:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 0;
+    border-top: 25px solid #fffbfd;
+    border-left: 25px solid #1facff;
+    border-right: 25px solid #1facff;
+
+}

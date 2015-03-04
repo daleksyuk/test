@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>
+    8 Напишите функцию-конструктор Summator, которая создает объект с двумя методами:
+    •	sum(a,b) возвращает сумму двух значений
+    •	run() запрашивает два значения при помощи prompt и выводит их сумму.
+    new Summator().run() должно спрашивать два значения и выводить их сумму.
+
+</p>
+<script>
+    function summator(){
+        this.sum = function(a, b){
+            return a + b;
+        };
+        this.run=function(){
+            var x = +prompt('Enter 1 value', '');
+            //+ в число при вводе
+            var y = +prompt('Enter 2 value', '');
+            alert('Sum values: ' + this.sum(x, y))
+        };
+    }
+    new summator().run();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+body {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+.container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 70px auto 40px;
+    -webkit-perspective: 2000px;
+}
+
+#cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ( -100px );
+
+}
+
+#cube.spinning {
+    -webkit-animation: spinCubeWebkit 9s infinite  linear;
+
+}
+
+@-webkit-keyframes spinCubeWebkit {
+    0% { -webkit-transform: translateZ( -100px ) rotateX(   0deg ) rotateY(   0deg ); }
+    100% { -webkit-transform: translateZ( -100px ) rotateX( 360deg ) rotateY( 360deg ); }
+}
+
+
+#cube .figure {
+    display: block;
+    position: absolute;
+    width: 196px;
+    height: 196px;
+    border: 2px solid #494949;
+    background: #494949;
+    -webkit-backface-visibility: hidden;
+
+}
+
+#cube .front  {
+    -webkit-transform: translateZ( 100px );
+}
+#cube .back {
+    -webkit-transform: rotateX( -180deg ) translateZ( 100px );
+}
+#cube .right {
+    -webkit-transform: rotateY(   90deg ) translateZ( 100px );
+}
+#cube .left {
+    -webkit-transform: rotateY(  -90deg ) translateZ( 100px );
+}
+#cube .top {
+    -webkit-transform: rotateX(   90deg ) translateZ( 100px );
+}
+#cube .bottom {
+    -webkit-transform: rotateX(  -90deg ) translateZ( 100px );
+}
+
+.cube_face {
+    width:200px;
+    height:200px;
+}
+.cube_face span {
+    border:1px solid #494949;
+    background: #808080;
+    float:left;
+    width: 28%;
+    height: 28%;
+    margin: 2% 2%;
+
+    -webkit-animation: animateRubik 2s infinite alternate;
+}
+
+.front .cube_face span
+{
+    -webkit-animation: animateRubikFront 2s infinite alternate;
+}
+
+.back .cube_face span
+{
+    -webkit-animation: animateRubikBack 2s infinite alternate;
+}
+
+.right .cube_face span
+{
+    -webkit-animation: animateRubikRight 2s infinite alternate;
+}
+
+.left .cube_face span
+{
+    -webkit-animation: animateRubikLeft 2s infinite alternate;
+}
+
+.top .cube_face span
+{
+    -webkit-animation: animateRubikTop 2s infinite alternate;
+}
+
+.bottom .cube_face span
+{
+    -webkit-animation: animateRubikBottom 2s infinite alternate;
+}
+
+.front .cube_face span
+{
+    background: #ff0a03;
+}
+.back .cube_face span
+{
+    background: #050fff;
+}
+.right .cube_face span
+{
+    background: #008000;
+}
+.left .cube_face span
+{
+    background: #ffff00;
+}
+.top .cube_face span
+{
+    background: #ffffff;
+}
+.bottom .cube_face span
+{
+    background: #ff0000;
+}
+
+.cube_face span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    background: #ffff00;
+}
+.cube_face span:nth-of-type(2) {
+    -webkit-animation-delay: .2s;
+    background: #008000;
+}
+.cube_face span:nth-of-type(3) {
+    -webkit-animation-delay: .4s;
+    background: #ffffff;
+}
+.cube_face span:nth-of-type(4) {
+    -webkit-animation-delay: .6s;
+    background: #0b09ff;
+}
+.cube_face span:nth-of-type(6) {
+    -webkit-animation-delay: .8s;
+    background: #ff0725;
+}
+.cube_face span:nth-of-type(7) {
+    -webkit-animation-delay: 1s;
+    background: #ffa500;
+}
+.cube_face span:nth-of-type(8) {
+    -webkit-animation-delay: 1.2s;
+    background: #ffff00;
+}
+.cube_face span:nth-of-type(9) {
+    -webkit-animation-delay: 1.4s;
+    background: #008000;
+}
+

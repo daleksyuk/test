@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 6</title>
+
+</head>
+<body>
+<p>
+    6 Создайте функцию multiplyNumeric, которая получает объект и умножает все численные свойства на 2.
+    <pre>
+   / до вызова
+var menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+
+multiplyNumeric(menu);
+
+// после вызова
+menu = {
+    width: 400,
+    height: 600,
+    title: "My menu"
+};
+</pre>
+    Для проверки на число используйте функцию:
+    function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n)}
+
+</p>
+<script>
+    var menu = {
+        width: 200,
+        height: 300,
+    };
+
+    function isNumeric(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
+    function repeat(obj) {
+    /*Цикл по ключам: for (key in obj),
+    порядок перебора = порядку объявления строковых ключей*/
+        for(var key in obj) {
+        //проверка свойства оператор  if
+            if (isNumeric( obj[key] )) {
+            obj[key] = obj[key] * 2;
+        }
+    }
+    }
+
+    repeat(menu);
+    alert('width: '+menu.width);
+    alert('height: '+menu.height);
+</script>
+</body>
+</html>

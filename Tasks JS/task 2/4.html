@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //или так:
+    /*var min = 1, max = 5;
+    var random = min + Math.random()*(max-min+1);
+    //округление Math.round() к случайному числу диапазона (max-min+1)
+    random = Math.round(random);
+
+    alert(random);*/
+     var num = [1, 11];//исключить следующие диапазоны цифр
+     var rnd;
+     function getRandomInt(min, max)
+     {
+     return Math.round(Math.random() * (max - min + 1)) + min;
+     }//целое число в диапазоне min  max
+     do {
+     rnd = getRandomInt(2, 10);
+     } while (num.indexOf(rnd) != -1);
+
+     alert(rnd);
+    /*Math.random() возвращает дробное число от 0 до 1.
+     получить случайное число от 0 до (min  max)*случайное число+min
+     */
+</script>
+</body>
+</html>

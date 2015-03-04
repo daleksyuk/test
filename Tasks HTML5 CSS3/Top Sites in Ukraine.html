@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="RGraph/css/website.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+    <title>Топ-10 украинских сайтов</title>
+
+    <!-- Include the RGraph libraries -->
+    <script src="RGraph/libraries/RGraph.common.core.js" ></script>
+    <script src="RGraph/libraries/RGraph.common.tooltips.js" ></script>
+    <script src="RGraph/libraries/RGraph.common.dynamic.js" ></script>
+    <script src="RGraph/libraries/RGraph.bar.js" ></script>
+    <script src="RGraph/libraries/RGraph.pie.js" ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="../excanvas/excanvas.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+    <h1>Топ-10 украинских сайтов за сентябрь 2014 года</h1>
+    <p>
+        Компания Gemius Украина представила Топ-10 сайтов Уанета за сентябрь 2014 года.
+        Данные основаны на результатах исследования gemiusAudience,</br> сообщили в компании.
+        Лидером рейтинга оказался Google.com, за которым следуют Vk.com, Mail.ru, Yandex.ua и Youtube.com.
+    </p>
+
+    <canvas id="cvs1" width="900" height="300">[No canvas support]</canvas>
+    <canvas id="cvs2" width="500" height="300">[No canvas support]</canvas>
+
+    <script>
+        $(document).ready(function ()
+        {
+            var bar = new RGraph.Bar({
+                id: 'cvs1',
+                data: [71,61,53,50,43,32,21,20,18,14],
+                options: {
+                    gutter: {
+                        left: 35
+                    },
+                    colors: ['deepskyblue'],
+                    labels: ['Google.com', 'Vk.com', 'Mail.ru', 'Yandex.ua' ,'Youtube.com',
+                        'Wikipedia.com', 'Slando.ua', 'Privatbank.ua', 'Sinoptik.ua', 'Microsoft.com'],
+                    tooltips: ['Google.com', 'Vk.com', 'Mail.ru', 'Yandex.ua' ,'Youtube.com',
+                        'Wikipedia.com', 'Slando.ua', 'Privatbank.ua', 'Sinoptik.ua', 'Microsoft.com']
+                }
+            }).draw();
+
+            var pie = new RGraph.Pie({
+                id: 'cvs2',
+                data: [71,61,53,50,43,32,21,20,18,14],
+                options: {
+                    labels: ['Google.com', 'Vk.com', 'Mail.ru', 'Yandex.ua' ,'Youtube.com',
+                        'Wikipedia.com', 'Slando.ua', 'Privatbank.ua', 'Sinoptik.ua', 'Microsoft.com'],
+                    text: {
+                        color: '#999'
+                    }
+                }
+            }).roundRobin();
+        })
+    </script>
+
+    <p>
+        <a href="http://vk.com/" target="_blank" onclick="window.open('https://www.vk.com/', null, 'top=100,left=100,width=600,height=368'); return false"><img src="RGraph/images/vk.jpg" width="200" height="43" alt="Share on Vk" border="0" title="Visit the RGraph VK page"></a>
+		<a href="https://www.facebook.com/" target="_blank" onclick="window.open('https://www.facebook.com/', null, 'top=50,left=50,width=600,height=368'); return false"><img src="RGraph/images/facebook-large.png" width="200" height="43" alt="Share on Facebook" border="0" title="Visit the RGraph Facebook page" /></a>
+        <a href="https://twitter.com/" target="_blank" onclick="window.open('https://twitter.com/', null, 'top=50,left=50,width=700,height=400'); return false"><img src="RGraph/images/twitter-large.png" width="200" height="43" alt="Share on Twitter" border="0" title="Mention RGraph on Twitter" /></a>
+    </p>
+    </br>
+<p>Источник: http://www.gemius.com.ua/</p>
+</body>
+</html>

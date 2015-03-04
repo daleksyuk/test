@@ -1,0 +1,262 @@
+body {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.top_side {
+    width: 196px;
+    height: 200px;
+    border: 4px solid gray;
+    transform: scaleY(0.60) rotate(45deg);
+    position: absolute;
+    top: 42px;
+    left: 210px;
+    background: gray;
+}
+.t1 {
+    background: green;
+    height: 63px;
+    width: 61px;
+    border: 2px solid gray;
+    float: left;
+}
+.t2 {
+    background: red;
+    height: 63px;
+    width: 61px;
+    border: 2px solid gray;
+    float: left;
+}
+.t3 {
+    background: orange;
+    height: 63px;
+    width: 61px;
+    border: 2px solid gray;
+    float: left;
+}
+.t4 {
+    background: white;
+    height: 63px;
+    width: 61px;
+    border: 2px solid gray;
+    float: left;
+}
+.t5 {
+    background: yellow;
+    height: 63px;
+    width: 61px;
+    border: 2px solid gray;
+    float: left;
+}
+.t6 {
+    background: blue;
+    height: 63px;
+    width: 61px;
+    border: 2px solid gray;
+    float: left;
+}
+.t7 {
+    background: blue;
+    height: 63px;
+    width: 61px;
+    border: 2px solid gray;
+    float: left;
+}
+.t8 {
+    background: white;
+    height: 63px;
+    width: 61px;
+    border: 2px solid gray;
+    float: left;
+}
+.t9 {
+    background: red;
+    height: 63px;
+    width: 61px;
+    border: 2px solid gray;
+    float: left;
+}
+
+
+.left_side {
+     width: 162px;
+     height: 162px;
+     border: 3px solid gray;
+     transform: rotate(30deg) skew(30deg);
+     position: absolute;
+     top: 200px;
+     left: 157px;
+    background: gray;
+ }
+.l1 {
+    background: yellow;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.l2 {
+    background: green;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.l3 {
+    background: blue;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.l4 {
+    background: orange;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.l5 {
+    background: red;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.l6 {
+    background: green;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.l7 {
+    background: green;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.l8 {
+    background: yellow;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.l9 {
+    background: orange;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+
+
+.right_side {
+    width: 162px;
+    height: 162px;
+    border: 3px solid gray;
+    transform: rotate(-30deg) skew(-30deg);
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    background: gray;
+}
+.r1 {
+    background: white;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.r2 {
+    background: orange;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.r3 {
+    background: yellow;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.r4 {
+    background: red;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.r5 {
+    background: green;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.r6 {
+    background: white;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.r7 {
+    background: white;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.r8 {
+    background: red;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+.r9 {
+    background: blue;
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    float: left;
+}
+
+
+
+@font-face {
+    font-family: "andantino";
+    src: url("andantino-script.ttf");
+}
+
+.bliking {
+    font-family: "andantino", sans-serif;
+    font-size: 20px;
+    position :relative;
+    -webkit-animation: mymove 5s infinite;
+
+    animation: mymove 5s infinite,
+    blinker 2s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+
+.bliking:hover{font-size: 25px;
+color: red}
+
+@keyframes blinker {
+    from {color: #fffe15;}
+    to {color: #1008ff;}
+    from {opacity: 10;}
+    to {opacity: 0;}
+}
+@keyframes mymove {
+    0%   {top: 0px; left: 0px; }
+    25%  {top: 0px; left: 250px;}
+    50%  {top: 400px; left: 400px; }
+    75%  {top: 400px; left: 0px; }
+    100% {top: 0px; left: 0px; }
+}
+

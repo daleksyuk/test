@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 13</title>
+</head>
+<body>
+<p>
+    Создайте функцию find(arr, value), которая ищет в массиве arr
+    значение value и возвращает его номер, если найдено, или -1, если не найдено.
+</p>
+<script>
+    var arr = ['one', 2, 3, 'five'];//index 0. 1, 2, 3
+    //массив(объект) в функцию передаётся по ссылке
+    function find(arr, value){
+        var x = 0;
+        for(x; x < arr.length; x++) {
+            if (arr[x] === value) return x;
+            //возврат индекса из массива
+        }
+        return -1;//если нет-возврат -1
+    }
+//искомое значение элемента массива по индексу
+    alert( find(arr, 'five') );
+    alert( 'value: ' + arr[3] );
+</script>
+</body>
+</html>

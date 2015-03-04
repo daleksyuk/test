@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 9</title>
+</head>
+<body>
+<p>
+    9 Напишите функцию pow(x,n), которая возвращает x в степени n.
+    Иначе говоря, умножает x на себя n раз и возвращает результат.
+    pow(3, 2) = 3*3 = 9
+    pow(3, 3) = 3*3*3 = 27
+    pow(1, 100) = 1*1*...*1 = 1
+    Создайте страницу, которая запрашивает x и n, а затем выводит результат pow(x,n).
+
+</p>
+<script>
+    var x = prompt('Enter x', '');
+    var n = prompt('enter n', '');
+
+    function getPow(x, n) {
+        var numRes = x;
+        var a = 1;
+        for(a; a < n; a++) {
+            numRes = numRes * x;//numRes *= x;
+        }
+        return numRes;
+    }
+    alert( getPow(x, n) );
+</script>
+</body>
+</html>

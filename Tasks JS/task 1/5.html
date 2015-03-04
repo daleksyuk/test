@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 5</title>
+</head>
+<body>
+<p>
+    5 Напишите условие if для проверки того факта, что age НЕ находится между 18 и 65 включительно.
+    Сделайте два варианта условия: первый с использованием оператора НЕ !, второй - без этого оператора.
+
+</p>
+<script>
+    var okOne = prompt('number except from 18 till 65 first way', '')
+    if (!(okOne >= 18 && okOne <= 65)) {
+        alert('Yep!');
+    }
+    else{
+        alert('Ops!');
+    }
+</script>
+
+<script>
+    var okTwo = prompt('number except from 18 till 65 second way', '');
+
+    if (okTwo < 18 || okTwo > 65) {
+        alert('yes');
+    }
+    else{
+        alert('wrong!');
+    }
+
+</script>
+</body>
+</html>

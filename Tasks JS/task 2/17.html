@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 17</title>
+</head>
+<body>
+<h1>Repeat</h1>
+<script>
+var arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
+
+function filterRange(arr, a, b) {
+var result = [];//временный пустой массив var results = []
+var x = 0;
+for(x; x < arr.length; x++) {
+// Проход по элементам arr в цикле и заполнение его.
+if (arr[x] >= a && arr[x] <= b) {
+//или так !(a <= arr[x] && arr[x] <= b) для значений вокруг диапазона
+result.push(arr[x]);
+}
+}
+return result;
+}
+
+alert(filterRange(arr, 3, 8));//a--b
+</script>
+<p>
+    </hr>17 Создайте функцию filterRangeInPlace(arr, a, b), которая получает массив с числами arr и удаляет из него все числа вне диапазона a..b.
+    То есть, проверка имеет вид a ≤ arr[i] ≤ b. Функция должна менять сам массив и ничего не возвращать.
+
+</p>
+</body>
+</html>

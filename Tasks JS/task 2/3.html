@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 3</title>
+</head>
+<body>
+<p>
+    Создайте функцию truncate(str, maxlength), которая проверяет длину строки str,
+    и если она превосходит maxlength — заменяет конец str на '…', так чтобы ее длина стала равна maxlength.
+    Результатом функции должна быть (при необходимости) усечённая строка.
+
+    Например: truncate("Вот, что мне хотелось бы сказать на эту тему:", 20) = "Вот, что мне хотело…"
+    truncate("Всем привет!", 20) = "Всем привет!
+
+</p>
+<script>
+    function truncate(str, maxlength) {
+        var newStr = str.length;
+        if (newStr > maxlength) {
+            return str.slice(0, maxlength - 3) + '...';
+            /*длина строки должна быть maxlength,
+             нужно её обрезать -3, для троеточия.*/
+        }
+        return str;
+        }
+
+    alert(truncate('Вот, что мне хотелось бы сказать на эту тему:', 20));
+    // итоговая длина равна maxlength 17
+    alert(truncate('Всем привет!', 20));
+
+</script>
+
+</body>
+</html>

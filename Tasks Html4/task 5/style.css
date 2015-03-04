@@ -1,0 +1,121 @@
+body, html {
+margin:0px;
+padding:0px;
+height:100%;
+width:100%;
+}
+
+
+.wrapper{
+background-color: #FFFFFF;
+margin-right: auto;
+margin-left: auto;   
+width: 60em;
+min-height: 100%;
+height: 100%;
+margin-bottom:-100px; /* отрицательный нижний отступ на высоту футера */
+padding: 0;
+}
+
+
+.header {background-image: url(background.gif) }
+
+
+.organizations{
+width:100%;
+height: 10%;    
+padding-top: 3%; 
+font-family: Georgia, serif;
+}
+.organizations #org1 {
+color: #D8A23F;
+font-size: 26px;
+}
+.organizations #org2 {
+color: #C66B48;
+margin-left: 10%;
+font-size: 18px;
+}
+
+
+.sidebar {
+width:100%;
+height:10%; 
+margin: 0.5px;
+padding: 5px;
+font-family: Georgia, serif;
+font-size: 14px;
+}
+.sidebar ul {
+display: inline;
+list-style-type: none;
+}
+.sidebar li {
+padding: 0.5em;
+background-color: #F0DFBC;
+float:left;
+border:2px solid #B3B9BE;
+margin-left:4px;
+}
+.sidebar ul li a {
+color: #B26E4C; 
+text-decoration:none;
+}
+.sidebar ul li:hover {
+color: #DDBF98;
+background-color: #A1512B;
+position: relative;
+top: 3px;
+}
+
+
+.beach1 {
+font-family: Georgia, serif;
+float: left;
+width:50%;
+height:80%; 
+margin-right: 5%;   
+}
+.beach1 .pic1 {
+margin-top:5px;
+width:18em;
+border:2px solid #A1512B;
+padding:5px;
+}
+.beach1 h2 { color: #97574C;}
+
+
+.beach2 {
+font-family: Georgia, serif;
+height:80%;
+}
+.beach2 h3 { color: #97574C;}
+.beach2 img{
+float: right;
+margin-left: 1%;
+margin-bottom: 1%;
+}
+
+
+.footer { 
+position:absolute; 
+top: 45em;
+}
+.footer a {color: #B98184;}
+
+.page-footer { 
+position:absolute; 
+top: 48em;
+right: 0; 
+left: 0;
+border-top: 7px solid #97574C;
+height: 10%;
+background-color: #E6D98F;
+}
+
+
+/*.footer {
+position: fixed; 
+bottom: 0; 
+right: 0; 
+left: 0;}*/

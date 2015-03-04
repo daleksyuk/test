@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 16</title>
+</head>
+<body>
+<p>
+    16 Напишите функцию camelize(str), которая преобразует строки вида «my-short-string» в «myShortString».
+    То есть, дефисы удаляются, а все слова после них получают заглавную букву.
+    Например:
+    camelize("background-color") == 'backgroundColor';
+    camelize("list-style-image") == 'listStyleImage';
+    Такая функция полезна при работе с CSS.
+    P.S. Вам пригодятся методы charAt, slice и toUpperCase.
+</p>
+<script>
+    function camelize(str) {
+        var arr = str.split('-');//разбивает строку дефисом
+        var x = 0;
+        for (x; x < arr.length; x++) {
+            var arrWord = arr[x].split('');
+            //первый символ с большой буквы
+            arrWord[0] = arr[x].charAt().toUpperCase();
+            arr[x] = arrWord.join('');
+        }//массив склеивает в строку
+        return arr.join('');
+    }
+        alert( camelize(prompt('Enter string', 'background-color')));
+        alert( camelize(prompt('Enter string', 'list-style-image')));
+</script>
+</body>
+</html>

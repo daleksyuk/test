@@ -1,0 +1,28 @@
+body{
+    background: -moz-linear-gradient(left, #2F2727, #1a82f7);
+}
+
+#example_form {
+    font-family: "Segoe UI Light", "Segoe UI", "Verdana";
+    font-weight: 100;
+    background-color: #a6a6a6;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 20px;
+}
+
+input {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    display:block;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+}
+
+.button {
+    border: 3px solid #777;
+    border-radius: 3em;
+    box-shadow: 0 3px 0 rgba(0,0,0,.20);
+}

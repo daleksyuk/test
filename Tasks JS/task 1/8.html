@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 8</title>
+</head>
+<body>
+<p>
+    8 Напишите функцию min(a,b), которая возвращает меньшее из чисел a,b.
+    Пример вызовов: min(2, 5) == 2
+    min(3, -1) == -1
+    min(1, 1) == 1
+</p>
+<script>
+    var a = prompt('Enter a', '');
+    var b = prompt('Enter b', '');
+    function getMin(a, b) {
+         if (a < b) {
+             return a;
+        } else {
+             return b;
+        }
+    }
+    alert (getMin(a, b));
+</script>
+</body>
+</html>

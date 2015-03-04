@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 7</title>
+</head>
+<body>
+<p>
+    7 Создайте объект calculator с тремя методами:
+    •	readValues() запрашивает prompt два значения и сохраняет их как свойства объекта
+    •	sum() возвращает сумму двух значений
+    •	mul() возвращает произведение двух значений
+
+</p>
+<script>
+    var calculator = {};
+    //объект calculator с 3 методами: sum, mul и readValues. readValues
+    calculator.sum = function() {//метод суммы
+        return this.a + this.b;
+    };
+     calculator.mul = function() {//метод умножения
+     return this.a * this.b;
+     };
+    calculator.readValues = function() {
+        //создает свойства a и b и заносит +числовые значения promp
+        this.a = +prompt('Enter 1 value', '');
+        this.b = +prompt('Enter  2 value', '');
+    };
+
+    calculator.readValues();//вызов метода readvalues
+    alert( calculator.sum() );//сумма
+    /*alert( calculator.mul() );//умножение*/
+</script>
+
+</body>
+</html>
